@@ -1,0 +1,26 @@
+.flex_box{
+    display: flex;
+    align-items: center;
+}
+
+.container{
+    justify-content: space-between;
+    padding: 20px 60px;
+    background-color: #fff;
+    border-bottom: 1px solid #e1e1e1;
+}
+
+.title{
+    font-weight: 600;
+    color:#FF4F01;
+}
+
+.nav_content{
+    width: 20%;
+    justify-content: space-between;
+}
+
+.nav_item:hover{
+    color: #FF4F01;
+    border-bottom: 2px solid #FF4F01;
+}
