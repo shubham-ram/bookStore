@@ -3,11 +3,18 @@ import styles from './styles.module.css'
 import books from "@/data/book.json";
 import formatAmount from '@/packages/utils/formatAmount';
 import AddtoCart from '@/packages/common/Button/AddtoCart';
+import { useDispatch } from 'react-redux';
+import { addToCart } from '@/store/action/cart';
 
+const featuredBooks = books.slice(0,3)
 
 function FeatureSection() {
+    const dispatch = useDispatch();
 
-    const featuredBooks = books.slice(0,3)
+    const addBookToCartHandler = ({book})=>{
+        dispatch(addToCart({...book, quantity: 1}))
+    }
+
 
     return (
         <div className={styles.container}>
@@ -38,7 +45,7 @@ function FeatureSection() {
                                         }
                                     })}
 
-                                    <AddtoCart showIcon/>
+                                    <AddtoCart onClick={()=>addBookToCartHandler({book})} showIcon/>
                                 </div>
                             </div>
                         </div>

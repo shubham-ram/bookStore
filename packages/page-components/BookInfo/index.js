@@ -5,9 +5,13 @@ import styles from './styles.module.css';
 import Image from 'next/image';
 import formatAmount from '@/packages/utils/formatAmount';
 import AddtoCart from '@/packages/common/Button/AddtoCart';
+import { useDispatch, useSelector } from 'react-redux';
+import { addToCart } from '@/store/action/cart';
 
 function BookInfo({ selectedBook={} }) {
-    const { back } = useRouter()
+    const { back } = useRouter();
+
+    const dispatch = useDispatch();
 
     const {
         title,
@@ -16,7 +20,11 @@ function BookInfo({ selectedBook={} }) {
         description,
         price,
         publisher
-    } = selectedBook || {}
+    } = selectedBook || {};
+
+    const addBookToCartHandler = ({book})=>{
+        dispatch(addToCart({...book, quantity: 1}))
+    }
 
     return (
         <div className={styles.container}>
@@ -54,7 +62,10 @@ function BookInfo({ selectedBook={} }) {
                         })}
                     </span>
 
-                    <AddtoCart className='book_info'/>
+                    <AddtoCart
+                        className='book_info'
+                        onClick={()=>addBookToCartHandler({book: selectedBook})}
+                    />
                 </div>
             </div>
         </div>

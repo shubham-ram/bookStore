@@ -4,12 +4,23 @@ import formatAmount from "@/packages/utils/formatAmount";
 import AddtoCart from "@/packages/common/Button/AddtoCart";
 import Header from "./Header";
 import { useRouter } from "next/router";
+import { useDispatch, useSelector } from "react-redux";
+import { addToCart } from "@/store/action/cart";
 
 function Books() {
-    const {push} = useRouter()
+    const {push} = useRouter();
+    const state = useSelector((state)=>state);
+
+	console.log(state,'state');
+
+    const dispatch = useDispatch()
 
     const redirectToBookInfo = ({isbn})=>{
         push('/books/[isbn]', `/books/${isbn}`)
+    }
+
+    const addBookToCartHandler = ({book})=>{
+        dispatch(addToCart({...book, quantity: 1}))
     }
 
     return (
@@ -38,7 +49,7 @@ function Books() {
                                     }
                                  })}
 
-                                 <AddtoCart size="sm" className="books"/>
+                                 <AddtoCart onClick={()=> addBookToCartHandler({book})} size="sm" className="books"/>
                             </div>
                         </div>
                     )

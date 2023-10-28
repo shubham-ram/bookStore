@@ -22,7 +22,7 @@ function Navbar() {
         </div>
 
         <div>
-          Login
+            <Link href='/my-cart'>My Cart</Link>
         </div>
     </nav>
   )
