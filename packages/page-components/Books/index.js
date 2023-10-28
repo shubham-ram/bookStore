@@ -3,8 +3,14 @@ import styles from './styles.module.css'
 import formatAmount from "@/packages/utils/formatAmount";
 import AddtoCart from "@/packages/common/Button/AddtoCart";
 import Header from "./Header";
+import { useRouter } from "next/router";
 
 function Books() {
+    const {push} = useRouter()
+
+    const redirectToBookInfo = ({isbn})=>{
+        push('/books/[isbn]', `/books/${isbn}`)
+    }
 
     return (
         <div>
@@ -15,8 +21,8 @@ function Books() {
                     const {title, author, book_image, price,isbn} = book || {}; 
 
                     return (
-                        <div className={styles.book_card}>
-                            <div>
+                        <div key={isbn} className={styles.book_card}>
+                            <div className={styles.top_section} onClick={()=>redirectToBookInfo({isbn})}>
                                 <img className={styles.book_img} src={book_image} alt={title}/>
                             
                                 <h3 className={styles.title}>{title}</h3>
