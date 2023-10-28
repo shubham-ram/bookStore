@@ -38,7 +38,7 @@ function FeatureSection() {
                                         }
                                     })}
 
-                                    <AddtoCart />
+                                    <AddtoCart showIcon/>
                                 </div>
                             </div>
                         </div>
