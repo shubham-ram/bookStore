@@ -6,8 +6,8 @@
 }
 
 .book_card{
-    margin: 22px 20px;
-    width: 21%;
+    margin: 22px 18px;
+    width: 22%;
     padding: 16px;
     border-radius: 8px;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
@@ -38,7 +38,8 @@
 }
 
 .book_img{
-    width: 90%;
+    padding: 10px 0;
+    width: 95%;
     margin: auto;
     display: block;
     aspect-ratio: 2/3;

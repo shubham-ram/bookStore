@@ -2,6 +2,10 @@
     margin: 20px 0;
     display: flex;
     justify-content: space-between;
+
+    @media screen and (max-width: 950px) {
+        flex-direction: column;
+    }
 }
 
 .flex_box{
@@ -13,6 +17,10 @@
 
 .back_container{
     cursor: pointer;
+
+     @media screen and (max-width: 950px) {
+       margin-bottom: 20px
+    }
 }
 
 .back_img{
@@ -25,15 +33,37 @@
     width: 80%;
     padding: 60px 20px;
     background-color: #DBF6F1;
+
+    @media screen and (max-width: 950px) {
+        flex-direction: column;
+        padding: 20px 60px;
+        width: 100%;
+
+    }
 }
 
 .img_container{
     width: 14%;
+
+    @media screen and (max-width: 1250px) {
+        width: 18% 
+    }
+
+    @media screen and (max-width: 950px) {
+        width: 100%;
+        margin-bottom: 20px
+    }
 }
 
 .book_img{
     position: relative;
     left: -100%;
+
+    @media screen and (max-width: 950px) {
+        left: 0;
+        margin: auto;
+        display: block;
+    }
 }
 
 .info_container{
@@ -43,6 +73,15 @@
     justify-content: space-evenly;
     margin-left: 20px;
     width: 60%;
+
+    @media screen and (max-width: 1250px) {
+        width: 80%;
+    }
+
+    @media screen and (max-width: 950px) {
+        width: 100%;
+    }
+
 }
 
 .title{
@@ -63,5 +102,4 @@
 .amount{
     font-weight: 600;
     font-size: 24px;
-    width: 40%;
 }
