@@ -1,0 +1,23 @@
+.container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.summary_section{
+    width: 67%;
+}
+
+.checkout_section{
+    width: 27%;
+}
+
+.empty_state{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.empty_state h3{
+    color: #838383;
+}

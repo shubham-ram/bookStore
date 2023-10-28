@@ -1,0 +1,20 @@
+.container{
+    display: flex;
+    align-items: center;
+}
+
+.btn{
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    padding: 2px 8px;
+}
+
+.btn[disabled]{
+    cursor: not-allowed;
+}
+
+.count{
+    width: 30px;
+    text-align: center;
+}
