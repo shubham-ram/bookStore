@@ -1,0 +1,11 @@
+.btn{
+    padding: 8px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    background-color: transparent;
+    border: 1px solid #000000;
+}
+.cart_img{
+    vertical-align: text-bottom;
+    margin-right: 4px;
+}
