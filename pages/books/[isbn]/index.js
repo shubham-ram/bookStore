@@ -11,7 +11,7 @@ function BookComponent() {
     })
 
     return (
-        <BookInfo selectedBook={selectedBook[0]}/>
+        <BookInfo selectedBook={selectedBook}/>
     )
 }
 
