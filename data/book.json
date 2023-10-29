@@ -4,7 +4,7 @@
       "author": "John Grisham",
       "description": "In a sequel to “The Firm,” Mitch McDeere, who is now a partner at the world’s largest law firm, gets caught up in a sinister plot.",
       "book_image": "https://storage.googleapis.com/du-prd/books/images/9780385548953.jpg",
-      "price": "120",
+      "price": "1000",
       "isbn": "0385548958",
       "publisher": "Doubleday"
     },
@@ -13,7 +13,7 @@
       "author": "Rebecca Yarros",
       "description": "Violet Sorrengail is urged by the commanding general, who also is her mother, to become a candidate for the elite dragon riders.",
       "book_image": "https://storage.googleapis.com/du-prd/books/images/9781649374042.jpg",
-      "price": "0.00",
+      "price": "1055",
       "isbn": "1649374046",
       "publisher": "Red Tower"
     },
@@ -22,7 +22,7 @@
       "author": "Bonnie Garmus",
       "description": "A scientist and single mother living in California in the 1960s becomes a star on a TV cooking show.",
       "book_image": "https://storage.googleapis.com/du-prd/books/images/9780385547345.jpg",
-      "price": "0.00",
+      "price": "900",
       "isbn": "038554734X",
       "publisher": "Doubleday"
     },
@@ -31,8 +31,17 @@
       "author": "Ann Patchett",
       "description": "Three daughters, who return to their family orchard in the spring of 2020, learn about their mother’s relationship with a famous actor.",
       "book_image": "https://storage.googleapis.com/du-prd/books/images/9780063327528.jpg",
-      "price": "0.00",
+      "price": "600",
       "isbn": "006332752X",
+      "publisher": "Harper"
+    },
+    {
+      "title": "COMMONWEALTH",
+      "author": "Ann Patchett",
+      "description": "In 1960s California, lawyer Bert Cousins divorces Teresa, leaving her to raise their four children alone Beverly Keating divorces Fix, an L.A. cop; and Bert and Beverly marry and relocate to Virginia",
+      "book_image": "https://www.publishersweekly.com/cover/9780062491794",
+      "price": "1800",
+      "isbn": "0062491792",
       "publisher": "Harper"
     },
     {
@@ -40,7 +49,7 @@
       "author": "Stephen King",
       "description": "The private detective Holly Gibney investigates whether a married pair of octogenarian academics had anything to do with Bonnie Dahl’s disappearance.",
       "book_image": "https://storage.googleapis.com/du-prd/books/images/9781668016138.jpg",
-      "price": "0.00",
+      "price": "700",
       "isbn": "1668016133",
       "publisher": "Scribner"
     },
@@ -49,27 +58,63 @@
       "author": "John Sandford",
       "description": "The 33rd book in the Prey series. Davenport and Flowers investigate the murder of a federal judge and his two young sons.",
       "book_image": "https://storage.googleapis.com/du-prd/books/images/9780593542811.jpg",
-      "price": "0.00",
-      "isbn": "0593542819",
-      "publisher": "Putnam"
+      "price": "1000",
+      "isbn": "059308702X",
+      "publisher": "G.P. Putnam's Sons"
     },
     {
       "title": "DEMON COPPERHEAD",
       "author": "Barbara Kingsolver",
       "description": "Winner of a 2023 Pulitzer Prize for fiction. A reimagining of Charles Dickens’s “David Copperfield” set in the mountains of southern Appalachia.",
       "book_image": "https://storage.googleapis.com/du-prd/books/images/9780063251922.jpg",
-      "price": "0.00",
+      "price": "450",
       "isbn": "0063251922",
       "publisher": "Harper"
+    },
+    {
+      "title": "THE MAGICIAN'S ASSISTANT ",
+      "author": "Ann Patchett",
+      "description": "A secretive magician’s death becomes the catalyst for his partner’s journey of self-discovery in this enchanting book that is something of a magic trick in itself-a 1990s love story with the grace and charm of a nineteenth-century novel",
+      "book_image": "https://www.publishersweekly.com/cover/9780151002634",
+      "price": "2000",
+      "isbn": "0151002630",
+      "publisher": "Harcourt"
     },
     {
       "title": "THE ARMOR OF LIGHT",
       "author": "Ken Follett",
       "description": "The fifth book in the Kingsbridge series. Change and turmoil affect various aspects of society in the latter part of the 18th century.",
       "book_image": "https://storage.googleapis.com/du-prd/books/images/9780525954996.jpg",
-      "price": "0.00",
+      "price": "2350",
       "isbn": "0525954996",
       "publisher": "Viking"
+    },
+    {
+      "title": "OCEAN PREY",
+      "author": "John Sandford",
+      "description": "An off-duty Coast Guardsman is fishing with his family when he calls in some suspicious behavior from a nearby boat. ",
+      "book_image": "https://www.johnsandford.org/pic/Prey31.jpg",
+      "price": "1200",
+      "isbn": "0593542819",
+      "publisher": "Putnam"
+    },
+    {
+      "title": "STROM FRONT",
+      "author": "John Sandford",
+      "description": "In Israel, a man clutching a backpack searches desperately for a boat. It's an Israeli cop, and she's chasing a man who's smuggled out an extraordinary relic",
+      "book_image": "https://www.johnsandford.org/pic/Virgil07.jpg",
+      "price": "1200",
+      "isbn": "0399159304",
+      "publisher": "G.P. Putnam's Sons"
+    },
+    {
+      "title": "JACKDAWS",
+      "author": "Ken Follett",
+      "description": "With the Allies preparing for the invasion of Nazi-occupied Europe, Felicity Flick Clariet, an agent in the ranks of the British Special Operations Executive, is given the job of destroying German lines of communications",
+      "book_image": "https://www.publishersweekly.com/cover/9780142800034",
+      "price": "800",
+      "isbn": "0142800031",
+      "publisher": "Penguin Audio"
     },
     {
       "title": "THE COVENANT OF WATER",
@@ -85,7 +130,7 @@
       "author": "Cassandra Clare",
       "description": "An orphan who is the body double for a royal heir and a woman with magical abilities are drawn into the underworld of the city-state of Castellane.",
       "book_image": "https://storage.googleapis.com/du-prd/books/images/9780525619994.jpg",
-      "price": "0.00",
+      "price": "400",
       "isbn": "0525619992",
       "publisher": "Del Rey"
     },
@@ -94,7 +139,7 @@
       "author": "Shel Van Pelt",
       "description": "A widow working the night shift at the Sowell Bay Aquarium is aided in solving a mystery by a giant Pacific octopus living there.",
       "book_image": "https://storage.googleapis.com/du-prd/books/images/9780063204157.jpg",
-      "price": "0.00",
+      "price": "2000",
       "isbn": "0063204150",
       "publisher": "Ecco"
     },
@@ -112,7 +157,7 @@
       "author": "James McBride",
       "description": "Secrets held by the residents of a dilapidated neighborhood come to life when a skeleton is found at the bottom of a well.",
       "book_image": "https://storage.googleapis.com/du-prd/books/images/9780593422946.jpg",
-      "price": "0.00",
+      "price": "900",
       "isbn": "0593422945",
       "publisher": "Riverhead"
     },
@@ -121,7 +166,7 @@
       "author": "Nelson DeMille and Alex DeMille",
       "description": "The second book in the Scott Brodie and Maggie Taylor series. After a mission in Venezuela, Brodie and Taylor search for the murderer of a fellow agent.",
       "book_image": "https://storage.googleapis.com/du-prd/books/images/9781501101816.jpg",
-      "price": "0.00",
+      "price": "1100",
       "isbn": "1501101811",
       "publisher": "Scribner"
     },
@@ -130,8 +175,17 @@
       "author": "Danielle Steel",
       "description": "The former head of a Hollywood studio thinks the unfinished novel written by a woman he hired to get his affairs in order could be adapted for the screen.",
       "book_image": "https://storage.googleapis.com/du-prd/books/images/9781984821959.jpg",
-      "price": "0.00",
+      "price": "1100",
       "isbn": "1984821954",
+      "publisher": "Delacorte"
+    },
+    {
+      "title": "SUNSET IN ST. TROPEZ",
+      "author": "Danielle Steel",
+      "description": "The former head of a Hollywood studio thinks the unfinished novel written by a woman he hired to get his affairs in order could be adapted for the screen.",
+      "book_image": "https://www.publishersweekly.com/cover/9780385335461",
+      "price": "1250",
+      "isbn": "0385335466",
       "publisher": "Delacorte"
     },
     {
@@ -139,7 +193,7 @@
       "author": "Adrienne Young",
       "description": "After her grandmother’s death, a woman goes on a journey that might change the past and the future.",
       "book_image": "https://storage.googleapis.com/du-prd/books/images/9780593598672.jpg",
-      "price": "0.00",
+      "price": "1500",
       "isbn": "0593598679",
       "publisher": "Delacorte"
     }

@@ -11,6 +11,14 @@ const nextConfig = {
 				protocol : 'https',
 				hostname : 'hachette.imgix.net',
 			},
+            {
+				protocol : 'https',
+				hostname : 'www.publishersweekly.com',
+			},
+            {
+				protocol : 'https',
+				hostname : 'www.johnsandford.org',
+			},
         ]
     }
 }
