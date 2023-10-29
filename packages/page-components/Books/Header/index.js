@@ -1,17 +1,45 @@
 import Image from 'next/image'
 import styles from './styles.module.css'
 import searchIcon from "@/packages/assests/search.png"
+import books from "@/data/book.json";
 
-function Header() {
-  return (
-    <div className={styles.container}>
+function Header({ setBookData }) {
 
-        <div className={styles.input_box}>
-            <Image className={styles.search_icon} src={searchIcon} width={10} height={10}/>
-            <input className={styles.input} placeholder='Enter Author Name '/>
+    const searchHandler = (e)=>{
+        const searchValue = e.target.value.toLowerCase(); 
+
+        setBookData(()=>{
+            const filterdBooks = books.filter((book)=>{
+                const authorName = book.author.toLowerCase();
+                
+                return authorName.includes(searchValue)
+            })
+
+            return filterdBooks;
+        })
+    }
+
+    return (
+        <div className={styles.container}>
+
+            <div className={styles.input_box}>
+                <Image
+                    width={10}
+                    height={10}
+                    src={searchIcon}
+                    className={styles.search_icon}
+                    alt='search icon'
+                />
+
+                <input
+                    type="text"
+                    onChange={searchHandler}
+                    className={styles.input}
+                    placeholder='Search By Author Name'
+                />
+            </div>
         </div>
-    </div>
-  )
+    )
 }
 
 export default Header
