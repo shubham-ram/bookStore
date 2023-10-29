@@ -1,0 +1,47 @@
+.container{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+}
+
+.register_container{
+    position: absolute;
+    padding: 20px;
+    width: 400px;
+    top: 20%;
+    transform: translateY(-20%);
+}
+
+.title{
+    color: #FF4F01;
+    margin-bottom: 20px;
+}
+
+
+.btn{
+    padding: 8px 16px;
+    border: none;
+    border-radius: 8px;
+    width: 100%;
+    background-color: #6130E8;
+    color: #fff;
+    cursor: pointer;
+    margin: 12px 0;
+}
+
+.footer_txt{
+    font-size: 10px;
+    text-align: center;
+    margin: 20px 0 ;
+}
+
+.redirect_cta{
+    color: #F68B21;
+    margin: 0 4px;
+}
+
+.redirect_cta:hover{
+    text-decoration: underline;
+}

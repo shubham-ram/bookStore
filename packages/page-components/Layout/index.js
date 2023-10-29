@@ -5,7 +5,7 @@ import books from '@/data/book.json';
 import { useDispatch } from 'react-redux';
 import { addAuthor } from '@/store/action/author';
 
-function Layout({children}) {
+function Layout({ children, src }) {
     const dispatch = useDispatch();
 
     useEffect(()=>{
@@ -27,7 +27,7 @@ function Layout({children}) {
 
     return (
         <div>
-            <Navbar/>
+            <Navbar src={src}/>
 
             <div className={styles.main_body}>
                 {children}

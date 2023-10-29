@@ -6,11 +6,14 @@ import store from '@/store/store';
 import '@/styles/globals.css'
 
 export default function App({ Component, pageProps }) {
+
+    const MainLayout = Component?.getLayout || Layout;
+
     return (
         <Provider store={store}>
-            <Layout>
+            <MainLayout>
                 <Component {...pageProps}/> 
-            </Layout>
+            </MainLayout>
         </Provider>
     )
 }
