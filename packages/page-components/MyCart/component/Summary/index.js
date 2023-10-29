@@ -3,8 +3,11 @@ import QuantityModifier from '@/packages/common/Button/QuantityModifier';
 import getFormattedAmt from '../../utils/getFormattedAmount';
 
 import styles from './style.module.css'
+import { useDispatch } from 'react-redux';
+import { removeFromCart } from '@/store/action/cart';
 
 function Summary({ myCart=[] }) {
+    const dispatch = useDispatch();
 
     return (
         <div className={styles.container}>
@@ -37,6 +40,14 @@ function Summary({ myCart=[] }) {
 
                             <div className={styles.price}>
                                 {getFormattedAmt({amount: quantity * (+price)})}
+                            </div>
+
+                            <div
+                                className={styles.remove}
+                                onClick={()=> dispatch(removeFromCart(isbn))}
+                                role='presentation'
+                            >
+                                <p>Remove</p>
                             </div>
                         </div>
                     )

@@ -3,32 +3,43 @@ import styles from './styles.module.css'
 import books from "@/data/book.json";
 import formatAmount from '@/packages/utils/formatAmount';
 import AddtoCart from '@/packages/common/Button/AddtoCart';
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import { addToCart } from '@/store/action/cart';
+import GoToCart from '@/packages/common/Button/GoToCart';
 
-const featuredBooks = books.slice(0,3)
+const featuredBooks = books.slice(0, 3)
 
 function FeatureSection() {
+    const { myCart } = useSelector((state) => state);
+
     const dispatch = useDispatch();
 
-    const addBookToCartHandler = ({book})=>{
-        dispatch(addToCart({...book, quantity: 1}))
+    const addBookToCartHandler = ({ book }) => {
+        dispatch(addToCart({ ...book, quantity: 1 }))
     }
 
 
     return (
         <div className={styles.container}>
             <h2>Featured</h2>
-            
+
             <div className={styles.feature_sec}>
 
-                {featuredBooks.map((book)=>{
-                    const {title, description,author, book_image, price,isbn} = book || {}; 
+                {featuredBooks.map((book) => {
+                    const { title, description, author, book_image, price, isbn } = book || {};
+
+                    const isItemAddedToCart = myCart.map((item) => item.isbn).includes(isbn);
 
                     return (
                         <div key={isbn} className={styles.book_card}>
-                            <Image className={styles.book_img} src={book_image} width={120} height={180} alt={title}/>
-                          
+                            <Image
+                                width={120}
+                                height={180}
+                                src={book_image}
+                                className={styles.book_img}
+                                alt={title}
+                            />
+
                             <div className={styles.info_section}>
                                 <div>
                                     <h3>{title}</h3>
@@ -39,13 +50,18 @@ function FeatureSection() {
                                 <div className={styles.footer}>
                                     {formatAmount({
                                         amount: price,
-                                        options:{
-                                            notation : 'standard',
-                                            style    : 'currency',
+                                        options: {
+                                            notation: 'standard',
+                                            style: 'currency',
                                         }
                                     })}
 
-                                    <AddtoCart onClick={()=>addBookToCartHandler({book})} showIcon/>
+                                    {!isItemAddedToCart ?
+                                        <AddtoCart
+                                            onClick={() => addBookToCartHandler({ book })}
+                                            showIcon
+                                        /> 
+                                        : <GoToCart />}
                                 </div>
                             </div>
                         </div>
@@ -53,7 +69,7 @@ function FeatureSection() {
                 })}
             </div>
 
-            
+
         </div>
     )
 }

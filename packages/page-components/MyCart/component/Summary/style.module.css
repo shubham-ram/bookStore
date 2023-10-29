@@ -28,7 +28,7 @@
 }
 
 .item{
-    width: 70%;
+    width: 60%;
 }
 
 .item img{
@@ -37,6 +37,21 @@
 
 .quantity{
     width: 20%;
+}
+
+.price{
+    width: 13%;
+}
+
+.remove{
+    width: 7%;
+    font-size: 11px;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.remove:hover{
+    color: #FF4F01;
 }
 
 .info{

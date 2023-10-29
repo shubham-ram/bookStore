@@ -5,19 +5,23 @@ import user from "@/packages/assests/user.png"
 
 import styles from './styles.module.css';
 import Image from 'next/image';
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import { addToCart } from '@/store/action/cart';
+import GoToCart from '@/packages/common/Button/GoToCart';
 
-function InfoContainer({ book = {}}) {
+function InfoContainer({ book = {} }) {
+    const { author, description, price, publisher, title, isbn } = book || {};
+
     const dispatch = useDispatch();
 
-    const { author, description, price, publisher, title} = book || {};
+    const { myCart } = useSelector((state) => state);
 
+    const isItemAddedToCart = myCart.map((item) => item.isbn).includes(isbn);
 
     const addBookToCartHandler = () => {
         dispatch(addToCart({ ...book, quantity: 1 }))
     }
-  
+
     return (
         <div className={styles.info_container}>
             <div>
@@ -44,10 +48,12 @@ function InfoContainer({ book = {}}) {
                 })}
             </span>
 
-            <AddtoCart
-                className='book_info'
-                onClick={addBookToCartHandler}
-            />
+            {!isItemAddedToCart ?
+                <AddtoCart
+                    className='book_info'
+                    onClick={addBookToCartHandler}
+                />
+                : <GoToCart />}
         </div>
     )
 }
