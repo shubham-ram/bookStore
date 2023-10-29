@@ -58,10 +58,11 @@ function FeatureSection() {
 
                                     {!isItemAddedToCart ?
                                         <AddtoCart
-                                            onClick={() => addBookToCartHandler({ book })}
                                             showIcon
+                                            onClick={() => addBookToCartHandler({ book })}
+                                            size='sm'
                                         /> 
-                                        : <GoToCart />}
+                                        : <GoToCart size='sm'/>}
                                 </div>
                             </div>
                         </div>

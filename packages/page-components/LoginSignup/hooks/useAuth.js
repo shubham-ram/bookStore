@@ -10,7 +10,7 @@ const useAuth = ({ isSignup }) => {
     const { setError, clearErrors } = formhook
 
     const submitHandler = (data) => {
-        console.log(data, 'data');
+
         const { email, password, confirm_password } = data || {};
 
         const registerdUser = userData.find((data) => data.email === email);

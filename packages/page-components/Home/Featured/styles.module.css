@@ -5,6 +5,7 @@
 .feature_sec{
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 
@@ -13,8 +14,8 @@
     border-radius: 12px;
     padding: 12px 16px;
     display: flex;
+    min-width: 350px;
     background-image: linear-gradient(to right bottom, #fcd9df, #cfe0f8 );
-    /* background-image: linear-gradient(to right bottom, #f3e9e8, #96b9d9 ); */
 }
 
 .book_img{
@@ -42,4 +43,17 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+@media screen and (max-width: 825px) {
+    .feature_sec{
+        align-items: center;
+    }
+
+    .book_card{
+        width: 100%;
+        margin: 20px;
+        min-width: 250px;
+
+    }
 }

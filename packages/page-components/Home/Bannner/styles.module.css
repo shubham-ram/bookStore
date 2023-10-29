@@ -21,3 +21,41 @@
 .banner_img{
     transform: rotateY(180deg);
 }
+
+@media screen and (max-width: 950px){
+    .banner{
+        align-items: flex-start;
+    }
+
+    .title{
+        font-size: 30px;
+    }
+
+    .sub_title{
+        font-size: 16px;
+    }
+
+    .banner_img{
+        width: 352px;
+        height: 264px;
+    }
+}
+
+@media screen and (max-width: 950px){
+    .banner{
+        height: auto;
+        padding: 20px
+    }
+
+    .title{
+        margin-bottom: 20px;
+    }
+
+    .banner_content{
+        text-align: center;
+    }
+
+    .banner_img{
+        display: none;
+    }
+}

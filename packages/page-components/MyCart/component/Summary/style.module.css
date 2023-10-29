@@ -66,3 +66,17 @@
     font-size: 12px;
     color: #6e6e6e;
 }
+
+@media screen and (max-width: 1000px) {
+    .item{
+        width: 50%;
+    }
+
+    .price{
+        width: 17%;
+    }
+
+    .remove{
+        width: 10%;
+    }
+}

@@ -13,8 +13,8 @@ const SIZE_MAPPING = {
     }
 }
 
-function AddtoCart({showIcon=false, onClick=()=>{}, size='md', className=''}) {
-    const {width, height} = SIZE_MAPPING[size]
+function AddtoCart({ showIcon = false, onClick = () => { }, size = 'md', className = '' }) {
+    const { width, height } = SIZE_MAPPING[size]
     return (
         <button
             type='button'
@@ -24,11 +24,11 @@ function AddtoCart({showIcon=false, onClick=()=>{}, size='md', className=''}) {
             {showIcon ?
                 <Image
                     width={width}
-                    src= {cartImg}
+                    src={cartImg}
                     height={height}
                     className={styles.cart_img}
-                /> 
-                :  null}
+                />
+                : null}
 
             <span>Add to Cart</span>
         </button>
