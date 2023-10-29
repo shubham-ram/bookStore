@@ -1,0 +1,24 @@
+.form_container{
+    margin: 10px 0;
+}
+
+.field{
+    margin-bottom: 20px;
+    width: 100%;
+}
+.label{
+    font-size: 14px;
+    margin-bottom: 4px;
+}
+
+.error{
+    font-size: 10px;
+    color: red;
+}
+
+.input_box{
+    padding: 8px 12px;
+    width: 100%;
+    border-radius: 6px;
+    border: 1px solid #333
+}
