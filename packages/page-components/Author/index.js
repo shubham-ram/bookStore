@@ -21,6 +21,7 @@ function Author() {
             <div className={styles.list}>
                 {Object.values(authors).map((author)=>(
                     <div
+                        key={author?.name}
                         className={styles.card}
                         role="presentation"
                         onClick={()=> redirectToBook({ name: author?.name})}
