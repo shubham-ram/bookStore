@@ -1,4 +1,6 @@
 const setCookie = ({ cookieName, cookieValue, cookieExpiryDays }) => {
+	if(typeof window === 'undefined') return null;
+
     let expiryDate = new Date();
 
     expiryDate.setDate(expiryDate.getDate() + cookieExpiryDays);
@@ -10,7 +12,9 @@ const setCookie = ({ cookieName, cookieValue, cookieExpiryDays }) => {
     document.cookie = cookie;
 }
 
-const getCookieValue = (cookieName) => {
+const getCookieValue = ({ cookieName }) => {
+	if(typeof window === 'undefined') return null;
+
 	const cookiePairs = document.cookie.split('; ');
 
 	const cookiePair = cookiePairs.find((pair) => {
