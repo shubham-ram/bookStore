@@ -1,17 +1,39 @@
 import Navbar from '@/packages/common/Navbar'
-import React from 'react'
+import React, { useEffect } from 'react'
 import styles from './styles.module.css'
+import books from '@/data/book.json';
+import { useDispatch } from 'react-redux';
+import { addAuthor } from '@/store/action/author';
 
 function Layout({children}) {
-  return (
-    <div>
-        <Navbar/>
+    const dispatch = useDispatch();
 
-        <div className={styles.main_body}>
-            {children}
+    useEffect(()=>{
+        const authorHash = books.reduce((acc, currBook)=>{
+            const { author } = currBook || {};
+            const currAuthor = acc?.[author] || {};
+
+            return {
+                ...acc,
+                [author]: {
+                    name: author,
+                    books: [...currAuthor?.books || [], currBook]
+                }
+            }
+        }, {})
+
+        dispatch(addAuthor(authorHash))
+    },[]);
+
+    return (
+        <div>
+            <Navbar/>
+
+            <div className={styles.main_body}>
+                {children}
+            </div>
         </div>
-    </div>
-  )
+    )
 }
 
 export default Layout

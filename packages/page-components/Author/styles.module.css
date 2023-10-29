@@ -1,0 +1,30 @@
+.list{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.card{
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    border: 1px solid #333;
+    margin: 20px;
+    width: 20%;
+    cursor: pointer;
+
+    @media screen and (max-width: 1300px) {
+        width: calc(30% - 24px);
+    }
+  
+    @media screen and (max-width: 1000px) {
+        width: calc(45% - 24px);
+    }
+
+    @media (max-width: 768px) {
+        width: 100%;
+    } 
+}
+.name{
+    margin: 0 8px;
+}
