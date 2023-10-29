@@ -24,3 +24,59 @@
     color: #FF4F01;
     border-bottom: 2px solid #FF4F01;
 }
+
+.right_content{
+    width: 12%;
+    justify-content: space-between;
+}
+
+.logout_btn{
+    padding: 6px 12px;
+    background-color: #FF4F01;
+    color:#fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1250px) {
+    .nav_content{
+        width: 30%;
+    }
+
+    .right_content{
+        width: 16%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .nav_content{
+        width: 35%;
+    }
+
+    .right_content{
+        width: 24%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .container{
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    .title{
+        font-size: 30px;
+    }
+
+    .nav_content{
+        width: 100%;
+        margin: 20px 0;
+        justify-content: space-around;
+    }
+
+    .right_content{
+        width: 100%;
+        justify-content: space-around;
+    }
+}
