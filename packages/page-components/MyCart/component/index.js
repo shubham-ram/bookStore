@@ -5,7 +5,7 @@ import Summary from './Summary';
 import Checkout from './Checkout';
 
 import styles from './styles.module.css';
-import empty_cart from '@/packages/assests/empty_cart.jpeg'
+import empty_cart from '@/packages/assests/emptyCart.jpeg'
 
 function MyCart() {
 	const { myCart=[] } = useSelector((state)=>state);
